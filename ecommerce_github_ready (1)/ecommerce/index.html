@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="amazon-header">
+        <div class="header-logo">
+            <i class="fab fa-amazon"></i>
+            <span>Amazon</span>
+        </div>
+        <form class="header-search">
+            <input type="text" placeholder="Search products..." id="searchInput">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="header-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="product-grid" id="productGrid">
+            <!-- Products will be injected here by JS -->
+        </section>
+    </main>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeCart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
